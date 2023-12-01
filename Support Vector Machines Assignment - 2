@@ -1,0 +1,30 @@
+
+Q1. What is the relationship between polynomial functions and kernel functions in machine learning algorithms?
+
+Answer: Polynomial functions are a type of kernel function used in machine learning algorithms, particularly support vector machines, to capture non-linear relationships and operate effectively in higher-dimensional spaces.
+
+Q3. How does increasing the value of epsilon affect the number of support vectors in SVR in 25 words
+
+Answer: Increasing the value of epsilon in Support Vector Regression (SVR) generally leads to an increase in the number of support vectors as it expands the margin tolerance for deviations from the regression line.
+
+Q4. How does the choice of kernel function, C parameter, epsilon parameter, and gamma parameter affect the performance of Support Vector Regression (SVR)? Can you explain how each parameter works and provide examples of when you might want to increase or decrease its value?
+
+Answer: The choice of kernel function, C parameter, epsilon parameter, and gamma parameter in Support Vector Regression (SVR) can significantly impact its performance:
+
+Kernel Function: The kernel function determines the type of non-linear mapping used in SVR. Examples include linear, polynomial, radial basis function (RBF), and sigmoid kernels. The choice depends on the dataset's characteristics and desired non-linearity.
+
+C Parameter: The C parameter controls the trade-off between achieving a small training error and a larger margin. Increasing C makes the model more sensitive to individual data points, potentially leading to overfitting. Decreasing C encourages a larger margin, but it may sacrifice accuracy on individual points.
+
+Epsilon Parameter: Epsilon (ε) defines the margin of tolerance around the regression line. It determines the width of the tube within which errors are tolerated. Increasing epsilon allows larger deviations from the regression line, resulting in a wider margin.
+
+Gamma Parameter: The gamma parameter influences the shape and reach of the RBF kernel. A higher gamma value leads to a narrower, more localized decision boundary, making the model more prone to overfitting. Lower gamma values result in a smoother decision boundary with a broader influence.
+
+When to adjust parameter values:
+
+Kernel Function: Choose the appropriate kernel based on the dataset's non-linear characteristics and the problem at hand.
+C Parameter: Increase C when you want a more precise fit or when overfitting is not a concern. Decrease C to prioritize a larger margin and to avoid overfitting.
+Epsilon Parameter: Increase epsilon when you want to allow larger deviations from the regression line or when you expect more noise in the data.
+Gamma Parameter: Increase gamma to create a more complex and localized decision boundary when dealing with complex, well-separated data. Decrease gamma to smooth the decision boundary for more generalization.
+The optimal parameter values depend on the specific dataset and problem, and experimentation is often necessary to achieve the best performance.
+
+ 
